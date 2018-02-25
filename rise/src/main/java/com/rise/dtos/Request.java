@@ -5,7 +5,7 @@ package com.rise.dtos;
  *
  * @author Andrés
  */
-public class ClientRequest {
+public class Request {
 
     private String nit;
     private String servicio;

@@ -1,6 +1,6 @@
 package com.rise.recargas.services;
 
-import com.rise.dtos.ClientRequest;
+import com.rise.dtos.Request;
 import com.rise.recargas.entities.TbRecarga;
 import java.util.List;
 import java.util.UUID;
@@ -34,7 +34,7 @@ public class TbRecargaFacadeREST extends AbstractFacade<TbRecarga> {
     
     @POST
     @Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_JSON})
-    public void create(ClientRequest entity) {
+    public void create(Request entity) {
         TbRecarga tr = new TbRecarga();
         //parsear la solicitud del cliente a una entidad TbRecarga
         //tr.setIdConsecutivo(UUID.randomUUID());
